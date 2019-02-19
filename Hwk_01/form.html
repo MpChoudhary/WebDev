@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Form</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+  </head>
+
+  <body>
+    <nav>
+      <a href="calendar.html" target="calendar.html">My Calendar</a>
+      <a href="form.html">Form Input</a>
+      <a href="myWidgets.html" target="myWidgets.html">My Widgets</a>
+    </nav>
+    <p></p>
+
+    <form action="http://www-users.cs.umn.edu/~shaw0162/index.php" method="get">
+      Event Name: <input type="text" name="eventname"><br>
+      Start Time: <input type="time" name="starttime"><br>
+      End Time: <input type="time" name="endtime"><br>
+      Location: <input type="text" name="location"><br>
+      Day of the Week: <select name="day">
+                        <option value="Mon">Mon</option>
+                        <option value="Tue">Tue</option>
+                        <option value="Wed">Wed</option>
+                        <option value="Thu">Thu</option>
+                        <option value="Fri">Fri</option>
+                      </select><br>
+      <input type="submit">
+    </form>
+  </body>
+</html>

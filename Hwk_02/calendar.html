@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calendar</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+
+    <script>
+      var $ = function (id) {
+        return document.getElementById ( id );
+      }
+      function pop_img(id, name, txt) {
+        var theimage = document.getElementById("limage");
+				theimage.src = name;
+				theimage.alt = txt;
+        document.getElementById(id).src = name;
+        document.getElementById(id).alt = txt;  
+        document.getElementById(id).style.display = 'block';
+        document.getElementById(id).syle.align = "center";
+      }
+      function delete_img(id) {
+        var i = document.getElementById(id);
+        i.style.display = 'none';
+      }
+    </script>
+  </head>
+
+  <body>
+    <nav>
+      <a href="calendar.html">My Calendar</a>
+      <a href="form.html" target="form.html">Form Input</a>
+      <a href="widget.html" target="widget.html">My Widgets</a>
+    </nav>
+    <p></p>
+    <table border = "1">
+      <tr>
+        <th>Monday</th>
+        <td onmouseover="pop_img('img1', 'Keller_hall.jpg', 'Keller')" onmouseout="delete_img('img1')">
+          10:10 - 11:00 AM<p></p>CSCI 4061 Disc. - KH 1-262<br>
+          <img id="img1" src="" alt="" class="image1">
+        </td>
+
+        <td onmouseover="pop_img('img2', 'anderson-hall.jpg', 'Anderson')" onmouseout="delete_img('img2')">
+          2:30 - 3:45 PM<p></p>CSCI 4131 - Anderson Hall 370<br>
+          <img id="img2" src="" alt="" class="image2">
+        </td>
+        <td></td>
+      </tr>
+      <tr>
+        <th>Tuesday</th>
+        <td onmouseover="pop_img('img3', 'bruininks_hall.jpg', 'Bruininks')" onmouseout="delete_img('img3')">
+          9:45 - 11:00 AM<p></p>CSCI 5801 - Bruininks 312<br>
+          <img id="img3" src="" alt="" class="image3">
+        </td>
+        <td onmouseover="pop_img('img4', 'bruininks_hall.jpg', 'Bruininks')" onmouseout="delete_img('img4')">
+          1:00 - 2:15 PM<p></p>CSCI 4061 - Bruininks 230<br>
+          <img id="img4" src="" alt="" class="image4">
+        </td>
+        <td onmouseover="pop_img('img5', 'lind_hall.jpg', 'Lind')" onmouseout="delete_img('img5')">
+          2:30 - 4:25 PM<p></p>ENGL 1401W - Lind 302<br>
+          <img id="img5" src="" alt="" class="image5">                
+        </td>
+      </tr>
+      <tr>
+        <th>Wednesday</th>
+        <td onmouseover="pop_img('img6', 'anderson-hall.jpg', 'Anderson')" onmouseout="delete_img('img6')">
+          2:30 - 3:45 PM<p></p>CSCI 4131 - Anderson Hall 370<br>
+          <img id="img6" src="" alt="" class="image6">
+        </td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <th>Thursday</th>
+        <td onmouseover="pop_img('img7', 'bruininks_hall.jpg', 'Bruininks')" onmouseout="delete_img('img7')">
+          9:45 - 11:00 AM<p></p>CSCI 5801 - Bruininks 312<br>
+          <img id="img7" src="" alt="" class="image7">
+        </td>
+        <td onmouseover="pop_img('img8', 'bruininks_hall.jpg', 'Bruininks')" onmouseout="delete_img('img8')">
+          1:00 - 2:15 PM<p></p>CSCI 4061 - Bruininks 230<br>
+          <img id="img8" src="" alt="" class="image8">
+        </td>
+        <td onmouseover="pop_img('img9', 'lind_hall.jpg', 'Lind')" onmouseout="delete_img('img9')">
+          2:30 - 4:25 PM<p></p>ENGL 1401W - Lind 302
+          <img id="img9" src="" alt="" class="image9">
+        </td>
+      </tr>
+      <tr>
+        <th>Friday</th>
+        <td onmouseover="pop_img('img10', 'Keller_hall.jpg', 'Keller')" onmouseout="delete_img('img10')">
+          9:00 - 9:50 AM<p></p>CSCI 5801 Disc. - KH 1-250
+          <img id="img10" src="" alt="" class="image10">
+        </td>
+        <td></td>
+        <td></td>
+      </tr>
+      </table>
+    <br>
+        <img id = "limage" src = "">  
+  </body>
+</html>

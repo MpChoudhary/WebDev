@@ -1,0 +1,22 @@
+
+<!DOCTYPE html>
+<html>
+  <body>
+
+  <div id="locations"></div>
+
+  <script>
+    var text = '{"lat1": "44.95045", "lon1": "-93.345002", "lat2": "44.95045", "lon2": "-93.345002"}';
+
+    var obj = JSON.parse(text);
+
+
+    document.getElementById("locations").innerHTML =
+    obj.lat1 + "<h>,</h>" +
+    obj.lon1 + "<br>" +
+    obj.lat2 + "<h>,</h>" +
+    obj.lon2;
+  </script>
+
+  </body>
+</html>
